@@ -15,6 +15,7 @@ strip =
 rebase =
 hgk = 
 purge = 
+graphlog =
 
 #histedit = ~/.hgrc.d/extension/histedit/hg_histedit.py
 histedit = 

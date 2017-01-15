@@ -8,12 +8,14 @@ call vundle#begin()
 
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end() 
 
 
 " Color setting
-colorscheme dark-ruby
+colorscheme django
 
 syntax on 
 filetype on 

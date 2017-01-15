@@ -1,4 +1,9 @@
 1. Set up vim 
 + install vbundle 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
++ install Plugin
+++ open vim 
+++ execute command. :PluginInstall 
+
+
 
