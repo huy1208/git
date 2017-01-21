@@ -1,6 +1,6 @@
 vim:
 	rsync .vimrc ~/.vimrc
-
+	rsync -av hvim/ ~/.vim/hvim
 
 hg:
 	rsync .hgrc ~/.hgrc 
