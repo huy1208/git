@@ -4,7 +4,7 @@
 + honza/vim-snippets: it is the place where the snippets of programming language are hosted.
 + SirVer/ultisnips: It is the tracking change. 
 
-Put in the configuraiton file 
+Put in the configuration file 
 Begin 
 
 " set the runtime path to include Vundle and initialize

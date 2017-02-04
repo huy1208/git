@@ -2,7 +2,6 @@ set nocompatible
 
 filetype off
 
-set rtp+=~/.vim/hvim
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -18,29 +17,50 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 
+" = 
 " Programming 
-Plugin 'majutsushi/tagbar'
 Plugin 'vim-ruby/vim-ruby'
 
 " Snippet installation  
 " all snippet 
 Plugin 'honza/vim-snippets'
-
 " For tracking change 
 Plugin 'SirVer/ultisnips'
+
+" Tagbar
+Plugin 'majutsushi/tagbar'
+
+" SVC (Source-code Version Control)
+" Mercurial 
+Plugin 'phleet/vim-mercenary'
+" Git
+Plugin 'tpope/vim-fugitive'
+
+" syntax checking 
+Plugin 'vim-syntastic/syntastic'
 
 " vim style 
 "
 Plugin 'bling/vim-bufferline'
 Plugin 'edkolev/tmuxline.vim'
 
+
+" Experimental 
+" Syntax checking 
+" Plugin 'maralla/validator.vim'
+
+
 call vundle#end() 
 
 
 let mapleader = ","
 
+" Enable vim for searching the .vimrc from the current directory. 
+set exrc
+
 " Ctrl-P key-binding  
 let g:ctrlp_by_filename = 1
+let g:ctrlp_extensions = ['quickfix']
 
 " vim-snippet 
 " ActivateAddons vim-snippets ultisnips 
@@ -51,9 +71,22 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 
-
-" NERDTree key-binding 
+" Key-biding 
+" NERDTree  
 nmap <leader>n :NERDTreeToggle<cr>
+
+" Tagbar 
+nmap <leader>t :TagbarToggle<cr>
+
+" Quickfix  
+" Open quickfix 
+nmap <leader>q :quickfix<cr>
+" move to the next item
+nmap <leader>] :cnext<cr>
+" move to the previous item
+nmap <leader>[ :cprevious<cr>
+
+
 
 
 " Color setting
@@ -64,5 +97,6 @@ filetype on
 filetype indent on
 filetype plugin on
 
+" so .vimrc.ex
 
 

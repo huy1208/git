@@ -1,5 +1,5 @@
 # Introduction  #
-Editting file as utf-8
+Editing file as utf-8
 
 # How to convert to UTF-8 file encoding #
 :set bomb ==> enable bomb 

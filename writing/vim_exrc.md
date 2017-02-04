@@ -1,5 +1,5 @@
 # Introduction #
-I simutaneously work with several software projects. Each project has its own coding standard and rule. Therefore, it is neccessary to have a particular configuraiton for each project.
+I simultaneously work with several software projects. Each project has its own coding standard and rule. Therefore, it is necessary to have a particular configuration for each project.
 
 The exrc option is utilized for the project-based setting. 
 
