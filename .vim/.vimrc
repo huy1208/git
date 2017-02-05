@@ -19,7 +19,9 @@ Plugin 'scrooloose/nerdtree'
 
 " = 
 " Programming 
-Plugin 'vim-ruby/vim-ruby'
+" This package should be manually installed as its main branch on the github
+" is not stable 
+" Plugin 'vim-ruby/vim-ruby'
 
 " Snippet installation  
 " all snippet 
