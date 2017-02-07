@@ -50,7 +50,7 @@ Plugin 'edkolev/tmuxline.vim'
 " Experimental 
 " Syntax checking 
 " Plugin 'maralla/validator.vim'
-
+Plugin 'godlygeek/tabular'
 
 call vundle#end() 
 
@@ -72,6 +72,17 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+
+" Configuration 
+" Tagbar 
+" tagbar-markdown 
+let g:tagbar_type_markdown = {
+			\ 'ctagstype' : 'markdown',
+			\ 'kinds' : [
+			\ 'h:headings'
+			\ ],
+			\ 'sort' : 0,
+			\ }
 
 " Key-biding 
 " NERDTree  

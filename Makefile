@@ -8,3 +8,4 @@ git:
 
 vim:
 	rsync .vim/.vimrc ~/.vimrc
+	rsync .vim/.ctags ~/.ctags
