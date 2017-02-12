@@ -19,9 +19,10 @@ Plugin 'scrooloose/nerdtree'
 
 " = 
 " Programming 
-" This package should be manually installed as its main branch on the github
-" is not stable 
-" Plugin 'vim-ruby/vim-ruby'
+" Ruby stuff 
+" text-object for ruby 
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 " Snippet installation  
 " all snippet 
@@ -41,16 +42,23 @@ Plugin 'tpope/vim-fugitive'
 " syntax checking 
 Plugin 'vim-syntastic/syntastic'
 
+" for commentary 
+Plugin 'tpope/vim-commentary'
+
 " vim style 
 "
 Plugin 'bling/vim-bufferline'
 Plugin 'edkolev/tmuxline.vim'
 
+" Dir diff
+Plugin 'will133/vim-dirdiff'
 
 " Experimental 
 " Syntax checking 
 " Plugin 'maralla/validator.vim'
 Plugin 'godlygeek/tabular'
+
+Plugin 'tpope/vim-sensible'
 
 call vundle#end() 
 
