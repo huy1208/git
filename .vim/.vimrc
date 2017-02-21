@@ -13,9 +13,11 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'vim-airline/vim-airline'
 
-" File browser 
-Plugin 'kien/ctrlp.vim'
+" File/Buffer browser 
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'mileszs/ack.vim'
+Plugin 'vim-scripts/LustyExplorer'
 
 " = 
 " Programming 
@@ -70,7 +72,9 @@ set exrc
 
 " Ctrl-P key-binding  
 let g:ctrlp_by_filename = 1
-let g:ctrlp_extensions = ['quickfix']
+let g:ctrlp_extensions = ['quickfix', 'line']
+" Set working directory to cwd
+let g:ctrlp_working_path_mode = 'w'
 
 " vim-snippet 
 " ActivateAddons vim-snippets ultisnips 
@@ -93,20 +97,11 @@ let g:tagbar_type_markdown = {
 			\ }
 
 " Key-biding 
-" NERDTree  
-nmap <leader>n :NERDTreeToggle<cr>
+" NERDTree (The left window)
+nmap <leader>l :NERDTreeToggle<cr>
 
-" Tagbar 
-nmap <leader>t :TagbarToggle<cr>
-
-" Quickfix  
-" Open quickfix 
-nmap <leader>q :quickfix<cr>
-" move to the next item
-nmap <leader>] :cnext<cr>
-" move to the previous item
-nmap <leader>[ :cprevious<cr>
-
+" Tagbar (The right window) 
+nmap <leader>r :TagbarToggle<cr>
 
 
 
@@ -117,6 +112,7 @@ syntax on
 filetype on 
 filetype indent on
 filetype plugin on
+set hidden 
 
 " so .vimrc.ex
 
