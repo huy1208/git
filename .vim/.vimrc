@@ -8,10 +8,11 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'flazz/vim-colorschemes'
+" Plugin 'flazz/vim-colorschemes'
 Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " File/Buffer browser 
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -70,6 +71,9 @@ let mapleader = ","
 " Enable vim for searching the .vimrc from the current directory. 
 set exrc
 
+" Vim-airline config
+let g:airline_powerline_fonts = 1
+
 " Ctrl-P key-binding  
 let g:ctrlp_by_filename = 1
 let g:ctrlp_extensions = ['quickfix', 'line']
@@ -105,8 +109,6 @@ nmap <leader>r :TagbarToggle<cr>
 
 
 
-" Color setting
-colorscheme django 
 
 syntax on 
 filetype on 
@@ -114,6 +116,8 @@ filetype indent on
 filetype plugin on
 set hidden 
 
-" so .vimrc.ex
+" Color setting
+set background=dark
+colorscheme solarized 
 
 
