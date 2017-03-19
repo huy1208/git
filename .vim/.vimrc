@@ -6,6 +6,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'Valloric/YouCompleteMe'
+
 Plugin 'gmarik/Vundle.vim'
 
 " Plugin 'flazz/vim-colorschemes'
@@ -19,6 +21,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
 Plugin 'vim-scripts/LustyExplorer'
+
+" Plugin 'ervandew/supertab'
 
 " = 
 " Programming 
@@ -83,10 +87,10 @@ let g:ctrlp_working_path_mode = 'w'
 " vim-snippet 
 " ActivateAddons vim-snippets ultisnips 
 
-" ultisnips configuration 
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 
 " Configuration 
@@ -106,8 +110,6 @@ nmap <leader>l :NERDTreeToggle<cr>
 
 " Tagbar (The right window) 
 nmap <leader>r :TagbarToggle<cr>
-
-
 
 
 syntax on 
