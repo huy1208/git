@@ -1,0 +1,16 @@
+==== start log session ====
+ 76.071101 SEND on 0: '[4,"hello!"]'
+ 76.075889 : looking for messages on channels
+ 76.176179 RECV on 0: '[4, "got it"]'
+ 76.182336 on 0: Getting JSON message 4
+ 76.182370 on 0: Invoking one-time callback MyHandler1
+ 80.188027 : looking for messages on channels
+ 96.187601 SEND on 0: '[5,"hello!"]'
+ 96.188215 RECV on 0: '[5, "got it"]'
+ 96.192364 : looking for messages on channels
+ 96.192386 on 0: Getting JSON message 5
+ 96.192396 on 0: Invoking one-time callback MyHandler1
+100.207283 : looking for messages on channels
+506.443681 ERR on 0: channel_select_check(): Cannot read from channel
+506.443727 on 0: Closing channel
+506.443785 : looking for messages on channels

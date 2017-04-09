@@ -20,7 +20,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
-Plugin 'vim-scripts/LustyExplorer'
+" Plugin 'vim-scripts/LustyExplorer'
 
 " Plugin 'ervandew/supertab'
 
@@ -45,6 +45,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'phleet/vim-mercenary'
 " Git
 Plugin 'tpope/vim-fugitive'
+" Mercurial 
+Plugin 'ludovicchabant/vim-lawrencium'
 
 " syntax checking 
 Plugin 'vim-syntastic/syntastic'
@@ -66,6 +68,10 @@ Plugin 'will133/vim-dirdiff'
 Plugin 'godlygeek/tabular'
 
 Plugin 'tpope/vim-sensible'
+
+" asyn stuff
+Plugin 'ramele/agrep'
+Plugin 'skywind3000/asyncrun.vim'
 
 call vundle#end() 
 
